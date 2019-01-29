@@ -1,0 +1,16 @@
+#center {
+
+  width: 500px; /* Ширина элемента в пикселах */
+  padding: 10px; /* Поля вокруг текста */
+  margin: auto; /* Выравниваем по центру */
+  background-image: url(Background.png) /* Цвет фона */
+
+}
+
+.Yellowbutton,.Redbutton,.Bluebutton,.Greenbutton{
+
+  padding:10px;
+  margin-left: 10px;
+  color: black;
+  }
+#change_level{margin-left: 50px;}
