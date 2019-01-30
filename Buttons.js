@@ -4,7 +4,7 @@ let arr = ['Yellowbutton', 'Redbutton', 'Bluebutton', 'Greenbutton'];
 
 let arr2 = ['yellow', 'red', 'blue', 'green'];
 
-let res_user = [];
+var res_user = [];
 
 var user_mas=[];
 
@@ -14,7 +14,7 @@ var points = 0;
 
 var leg = 0;
 
-var lose = false;
+let lose = false;
 
 let level = 1;
 
@@ -93,7 +93,7 @@ class Buttons extends React.Component {
                 if (res_user[i] === user_mas[i]) points++;
                 else {
                     document.getElementById ('message_user').textContent = 'Sorry, you wrong. You have completed ' + leg + ' leg';
-                    lose = true; next_level=0;
+                    lose = true; next_level=0; leg=0;
                     break;
                 }
             }
@@ -140,6 +140,7 @@ class Buttons extends React.Component {
 
     handleStartBlink() {
         console.log(next_level);
+        lose=false;
         res_user = [];
         user_mas = [];
         document.getElementById ('change_level').disabled = true;
